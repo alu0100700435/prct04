@@ -1,4 +1,4 @@
-puts "Practica 4 - LPP"
+puts "\n Practica 4 - LPP"
 
 puts "\n--------------------------------------------------------------------------------- \n"
 puts "\n|\tPROGRAMA QUE REALIZA LA SUMA Y MULTIPLICACION DE MATRICES CUADRADAS\t|\n"
@@ -35,7 +35,6 @@ puts "\n------------------------------------------------------------------------
 puts "|\t\t~~~ La matriz resultante de la suma es ~~~ \t\t\t|"
 puts "--------------------------------------------------------------------------------- \n"
 
-puts "Resultado de la suma"
 m3 = Array.new(x.to_i){Array.new(x.to_i)} #Creacion de la matriz que contendrá el resultado de la suma
 
 for i in (0..((x.to_i)-1))
@@ -50,15 +49,15 @@ puts "\n------------------------------------------------------------------------
 puts "|\t\t~~~ La matriz resultante de la multiplicacion es ~~~ \t\t| "
 puts "--------------------------------------------------------------------------------- \n"
 
-
-m4 = Array.new(x.to_i){Array.new(x.to_i, 0)} #Creacion de la matriz que contendrá el resultado de la multiplicacion
+m4 = Array.new(x.to_i){Array.new(x.to_i, 0)} #Creacion de la matriz que contendrá el resultado de la multiplicacion , inicializada en 0
 
 for i in (0..((x.to_i)-1))
   for j in (0..((x.to_i)-1))
-	for k in (0..((x.to_i)-1))
-    m4[i][j] += m1[i][k] * m2[k][j]
+    for k in (0..((x.to_i)-1))
+      m4[i][j] += m1[i][k] * m2[k][j]	
+    end
   end
 end
 
 print m4
-puts " /n /n "
+puts "\n\n"
