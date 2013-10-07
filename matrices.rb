@@ -37,3 +37,15 @@ for i in (0..((x.to_i)-1))
 end
 
 print m3
+
+m4 = Array.new(x.to_i){Array.new(x.to_i, 0)} #Creacion de la matriz que contendrá el resultado de la multiplicacion
+
+for i in (0..((x.to_i)-1))
+  for j in (0..((x.to_i)-1))
+	for k in (0..((x.to_i)-1))
+    m4[i][j] += m1[i][k] * m2[k][j]
+  end
+end
+
+print m4
+
