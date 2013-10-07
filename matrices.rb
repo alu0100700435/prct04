@@ -16,7 +16,7 @@ for i in (0..((x.to_i)-1))
   end
 end
 
- puts "\n\t ~~ Elementos de la segunda matriz~~ \n"
+puts "\n\t ~~ Elementos de la segunda matriz~~ \n"
  for i in (0..((x.to_i)-1))
     for j in (0..((x.to_i)-1))
      puts " ~Introduzca el elemento #{i+1},#{j+1}:"
@@ -25,3 +25,15 @@ end
      m2[i][j] = y.to_f 
    end
  end
+
+
+puts "Resultado de la suma"
+m3 = Array.new(x.to_i){Array.new(x.to_i)} #Creacion de la matriz que contendrá el resultado de la suma
+
+for i in (0..((x.to_i)-1))
+  for j in (0..((x.to_i)-1))
+    m3[i][j] = m1[i][j] + m2[i][j]
+  end
+end
+
+print m3
